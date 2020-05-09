@@ -1,0 +1,75 @@
+- Personnes dans le groupe
+Aymen CHABCHOUB 4aiabd
+
+- Lib utilises
+
+use regex::Regex; <-- pas réussi 
+
+use std::iter::Iterator;
+use std::process::{Command, Stdio};
+use std::io::{self, Write};
+
+- url ou trouver votre depot
+
+- Reponses aux questions
+
+//###################### EX 1 #############################
+
+1. En Rust à quoi servent les références ?
+En rust les références permette à une variable d'avoir un unique propriétaire a la fois
+
+2. Citez en Rust les grandes façons de déclarer ses propres types.
+
+-> struct monType {
+     v1_monType: i16,
+     v2_monType: i16,
+ }
+
+-> let variable_monType =monType { v1_monType: i16, v2_monType: i16,};
+
+3. Rust est compilé nativement (assembleur sous forme de code machine) ou compte sur une machine
+virtuelle pour s’exécuter ?
+rustc compile en assembleur natif pour mon ordinateur
+
+4. Imaginons qu’on a un système avec un processeur 8bits, quelle est la valeur maximale adressable ?
+Écrire la solution en notation hexadécimale et décimale.
+
+2^n − 1.
+La valeur maximale adressable hexadécimale est de 0xOO à 0xFF
+La valeur maximale adressable décimal est de 0 à 255 
+
+5. Donnez votre définition d’un processus citez vos sources !
+un processuss a un début et une fin, il permet d'exécuter un programme dans un/plusieurs
+thread(s)
+Source : M.fouqueré prof de systéme et réseau a la fac
+
+
+ 
+//###################### EX 2 ####################################
+
+q1) 
+sur gitbash compiler / executer :  cargo build / cargo run
+binaire  :  target/debug/nom_programme
+exécution binaire  :  ./target/debug/nom_programme
+
+
+
+//###################### EX 3 ####################################
+/ q3) affiche l'état de sortie du process fils  Permet de savoir quand le processuss fils a fini
+
+q4) Rust étant asyinchrome lors de l'éxécution, le pére
+    continue à s’exécuter en concurrence avec ses ﬁls. 
+
+
+//###################### EX 4 ####################################
+
+q7) Un tube est un moyen de communication entre deux processuss.Le sens de communication est unique, l'entré --> sortie
+    
+source : cours d'architecture et systéme à la fac
+
+
+//###################### EX 5 ####################################
+
+10)  C’est quoi un processus id ?
+C'est le PID, l'identifiant ou nom d'un processus. Cela permet de cibler un processuss précis.
+source : cours d'architecture et systéme
